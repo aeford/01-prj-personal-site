@@ -6,6 +6,124 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Add your HTML content here -->
+  <!-- Navigation bar -->
+  <nav>
+    <!-- Each link goes to a section on the page -->
+    <a href="#bio">About Me</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+  </nav>
+
+  <!-- Header section -->
+  <header>
+    <!-- Sun image above the name -->
+    <img src="img/riser.webp" alt="A sun icon" width="200" height="200">
+    <h1>Alexis Ford</h1>
+    <p>Welcome to my personal website!</p>
+  </header>
+
+  <!-- Bio section -->
+  <section id="bio">
+    <h2>About Me</h2>
+    <p>
+      Hey there! I'm Alexis, a student at the University of North Carolina at Chapel Hill.<br>
+      I love to create websites with growing knowledge in HTML, CSS, and JavaScript. <br>
+      I work hard to make my websites user friendly and visually appealing.<br>
+      This is my first personal website, and I'm excited to share it with you!<br>
+    </p>
+  </section>
+
+  <!-- Skills section -->
+  <section id="skills">
+    <h2>My Skills</h2>
+    <!-- Skills listed in a horizontal line, no bullet points -->
+    <div class="skills-list">
+      <!-- HTML skill with icon above text -->
+      <span>
+        <!-- Icon above the text -->
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
+            <path d="M0-360v-240h60v80h80v-80h60v240h-60v-100H60v100H0Zm310 0v-180h-70v-60h200v60h-70v180h-60Zm170 0v-200q0-17 11.5-28.5T520-600h180q17 0 28.5 11.5T740-560v200h-60v-180h-40v140h-60v-140h-40v180h-60Zm320 0v-240h60v180h100v60H800Z"/>
+          </svg>
+        </div>
+        
+      </span>
+      <span>
+        <!-- Icon above the text for CSS -->
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
+            <path d="M420-360q-17 0-28.5-11.5T380-400v-40h60v20h80v-40H420q-17 0-28.5-11.5T380-500v-60q0-17 11.5-28.5T420-600h120q17 0 28.5 11.5T580-560v40h-60v-20h-80v40h100q17 0 28.5 11.5T580-460v60q0 17-11.5 28.5T540-360H420Zm260 0q-17 0-28.5-11.5T640-400v-40h60v20h80v-40H680q-17 0-28.5-11.5T640-500v-60q0-17 11.5-28.5T680-600h120q17 0 28.5 11.5T840-560v40h-60v-20h-80v40h100q17 0 28.5 11.5T840-460v60q0 17-11.5 28.5T800-360H680Zm-520 0q-17 0-28.5-11.5T120-400v-160q0-17 11.5-28.5T160-600h120q17 0 28.5 11.5T320-560v40h-60v-20h-80v120h80v-20h60v40q0 17-11.5 28.5T280-360H160Z"/>
+          </svg>
+        </div>
+        
+      </span>
+      <span>
+        <!-- Icon above the text for JavaScript -->
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
+            <path d="M300-360q-25 0-42.5-17.5T240-420v-40h60v40h60v-180h60v180q0 25-17.5 42.5T360-360h-60Zm220 0q-17 0-28.5-11.5T480-400v-40h60v20h80v-40H520q-17 0-28.5-11.5T480-500v-60q0-17 11.5-28.5T520-600h120q17 0 28.5 11.5T680-560v40h-60v-20h-80v40h100q17 0 28.5 11.5T680-460v60q0 17-11.5 28.5T640-360H520Z"/>
+          </svg>
+        </div>
+        
+      </span>
+      <span>
+        <!-- Icon above the text for Java -->
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
+            <path d="m384-336 56-57-87-87 87-87-56-57-144 144 144 144Zm192 0 144-144-144-144-56 57 87 87-87 87 56 57ZM200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0-33-23.5-56.5T760-120H200Zm0-80h560v-560H200v560Zm0-560v560-560Z"/>
+        </svg>
+        </div>
+        Java
+      </span>
+    </div>
+  </section>
+
+  <!-- Projects section -->
+  <section id="projects">
+    <h2>My Projects</h2>
+    <!-- Container to center both boxes together -->
+    <div style="text-align: center;">
+      <!-- Pink box as a button that links to your site -->
+      <a href="https://aeford.github.io/01-prj-personal-site" class="projects-box">
+        <strong>My Personal Website!</strong>
+        <!-- Body text below the main title -->
+        <div style="font-weight: normal; font-size: 18px; margin-top: 10px; color: #000;">
+          This is my very first project <br>
+          using newly developed skills <br>
+          in HTML and CSS.
+        </div>
+      </a>
+      <!-- New pink box for Project 2 -->
+      <div class="projects-box" style="vertical-align: top;">
+        <strong>Project 2: <br>
+          Coming Soon!</strong>
+        <!-- Body text for the new box -->
+        <div style="font-weight: normal; font-size: 18px; margin-top: 10px; color: #000;">
+          Stay tuned for <br>
+          more projects!
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Me section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <!-- Icons above the contact links -->
+    <div style="text-align: center; margin-bottom: 10px;">
+    </div>
+    <!-- Contact links: Email, LinkedIn, GitHub -->
+    <p style="text-align: center;">
+      <!-- Email link -->
+      <a href="mailto:aeford@unc.edu">aeford@unc.edu</a>
+      <!-- Separator -->
+      |
+      <!-- LinkedIn link -->
+      <a href="https://www.linkedin.com/in/alexis-ford-03168728a" target="_blank">LinkedIn</a>
+      |
+      <!-- GitHub link -->
+      <a href="https://github.com/aeford" target="_blank">GitHub</a>
+    </p>
+  </section>
 </body>
 </html>

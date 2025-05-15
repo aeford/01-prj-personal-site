@@ -1,1 +1,164 @@
-/* Add you CSS here */
+/* Basic page styles */
+body {
+  font-family: "Times New Roman", Times, serif; /* Use Times New Roman for all text */
+  background-color: #f9f9f9;      /* Light background color */
+  color: #222;                    /* Dark text for good contrast */
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation bar styles */
+nav {
+  background-color: #c2185b;      /* Dark pink background */
+  padding: 10px 0;                /* Space above and below */
+  text-align: center;             /* Center the links */
+}
+
+/* Navigation links */
+nav a {
+  background-color: #ffd1e6;      /* Light pink button */
+  color: #c2185b;                 /* Dark pink text (button text) */
+  text-decoration: none;          /* Remove underline */
+  margin: 0 15px;                 /* Space between links */
+  font-weight: bold;              /* Make text bold */
+  padding: 6px 12px;              /* Add some padding */
+  border-radius: 4px;             /* Rounded corners */
+  display: inline-block;          /* Make the link look like a button */
+}
+
+/* Highlight link on hover */
+nav a:hover {
+  background-color: #c2185b;      /* Dark pink on hover */
+  color: #fff;                    /* White text on hover */
+}
+
+/* Header styles */
+header {
+  background-color: #ffd1e6;              /* Light pink background (fallback) */
+  background-image:
+    linear-gradient(rgba(255, 209, 230, 0.7), rgba(255, 209, 230, 0.7)), /* Light pink overlay */
+    url('img/stripe.jpg');                /* Stripes background image */
+  background-size: cover;                 /* Make the image cover the whole header */
+  background-repeat: no-repeat;           /* Do not repeat the image */
+  background-position: center;            /* Center the image */
+  color: #c2185b;                        /* Dark pink text */
+  padding: 20px 0 20px 0;                /* Less space above and below the header text */
+  text-align: center;                    /* Center the text */
+  width: 100%;                           /* Make header full width */
+  box-sizing: border-box;                /* Include padding in width */
+}
+
+header p {
+  font-size: 28px;                /* Make the header body text larger */
+}
+
+/* Make the sun image in the header larger */
+header img[alt="A sun icon"] {
+  width: 150px;   /* Increase the width */
+  height: 150px;  /* Increase the height */
+  display: block; /* Make sure it starts on a new line */
+  margin: 0 auto 4px auto; /* Center the image and add space below */
+}
+
+/* Make the riser.webp image in the header larger */
+/* This targets the new image file for the sun */
+header img[src="img/riser.webp"] {
+  width: 250px;   /* Make the sun image wider */
+  height: 250px;  /* Make the sun image taller */
+  display: block; /* Make sure it starts on a new line */
+  margin: 0 auto 4px auto; /* Center the image and add space below */
+}
+
+/* Section styles */
+section {
+  background-color: #ffd1e6;      /* Light pink background for sections */
+  margin: 0;                      /* Remove margin for full width */
+  padding: 20px 0;                /* Top and bottom padding only */
+  width: 100%;                    /* Make section full width */
+  border-radius: 0;               /* Remove rounded corners */
+  box-shadow: none;               /* Remove shadow */
+  box-sizing: border-box;         /* Include padding in width */
+  font-size: 20px;                /* Increase font size for section text */
+  /* Remove any background image for simplicity */
+  background-image: none;
+}
+
+/* Headings */
+h2 {
+  color: #c2185b;                 /* Dark pink for section titles */
+  text-align: center;             /* Center section headings */
+  font-size: 32px;                /* Make section titles larger using px */
+  font-weight: bold;              /* Make section titles bold */
+}
+
+/* Skills and projects lists */
+ul {
+  padding-left: 20px;             /* Indent list items */
+  max-width: 600px;               /* Limit width for readability */
+  margin: 0 auto;                 /* Center the list */
+}
+
+li {
+  margin-bottom: 8px;             /* Space between list items */
+}
+
+/* Center the text in the About Me section */
+#bio {
+  text-align: center; /* Center all text in the About Me section */
+}
+
+/* Skills list styles */
+.skills-list {
+  text-align: center;         /* Center the skills horizontally */
+  margin-top: 16px;           /* Space above the skills */
+}
+
+.skills-list span {
+  display: inline-block;      /* Show skills in a line */
+  margin: 0 18px;             /* Space between each skill */
+  font-size: 20px;            /* Make skill text larger */
+  vertical-align: top;        /* Align spans to the top */
+  text-align: center;         /* Center icon and text inside each span */
+}
+
+.skills-list span div {
+  margin-bottom: 4px;         /* Space between icon and text */
+}
+
+.skills-list span svg {
+  width: 60px;   /* Make the icon wider */
+  height: 60px;  /* Make the icon taller */
+}
+
+/* Center the text in the Projects section and remove bullet points */
+#projects {
+  text-align: center;      /* Center all text in the Projects section */
+}
+
+#projects ul {
+  list-style: none;        /* Remove bullet points */
+  padding-left: 0;         /* Remove default left padding */
+  margin: 0 auto;          /* Center the list */
+}
+
+/* Pink box for the Projects section body text */
+#projects .projects-box {
+  background-color: #ffc1de;   /* Brighter pink fill for the box */
+  border: 2px solid #c2185b;   /* Dark pink border */
+  border-radius: 8px;          /* Rounded corners */
+  padding: 20px;               /* Space inside the box */
+  margin: 20px auto;           /* Space above and below, center the box */
+  max-width: 500px;            /* Limit the width for readability */
+  display: inline-block;       /* Shrink box to fit content and allow centering */
+  text-align: center;          /* Center the text inside the box */
+  color: #c2185b;              /* Dark pink text */
+  font-size: 22px;             /* Make the text a bit larger */
+  text-decoration: none;       /* Remove underline from the link */
+  font-weight: bold;           /* Make the text bold */
+  transition: background 0.2s; /* Smooth hover effect */
+  cursor: pointer;             /* Show pointer on hover */
+}
+
+#projects .projects-box:hover {
+  background-color: #ffd1e6;   /* Lighter pink on hover */
+}
